@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Playing Card Demo</title>
+</head>
+<style>
+    body{
+        background-image: linear-gradient(orchid, darkorchid);
+        background-repeat: no-repeat;
+    }
+    img {
+        display: block;
+    }
+    div{
+        position: relative;
+        margin: auto;
+        width: 500px;
+        height: 100vh;
+        background-color: darkslategrey;
+    }
+    .ace {
+        position: relative;
+        top: 10%;
+        left: 170px;
+        z-index: 100;
+    }
+
+    .king {
+        position: absolute;
+        top: 20%;
+        left: 170px;
+        z-index: 200;
+    }
+
+    .queen {
+        position: absolute;
+        top: 30%;
+        left: 170px;
+        z-index: 300;
+    }
+    .jack {
+        position: absolute;
+        top: 40%;
+        left: 170px;
+        z-index: 400;
+    }
+
+    .playing_card {
+        position: absolute;
+        top: 50%;
+        left: 170px;
+        z-index: 500;
+    }
+</style>
+
+<body>
+<div>
+    <img class="playing_card" src="playing_card_back.png" alt="Playing Card Back">
+    <img class="jack" src="jack_of_hearts_02.png" alt="Jack of Hearts">
+    <img class="queen" src="queen_of_spades_02.png" alt="Queen of Spades">
+    <img class="king" src="king_of_diamonds_02.png" alt="King of Diamonds">
+    <img class="ace" src="ace_of_clubs.png" alt="Ace of Clubs">
+</div>
+</body>
+</html>
